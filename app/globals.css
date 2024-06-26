@@ -16,6 +16,14 @@
   }
 }
 
+@font-face {
+  font-family: 'Chicago';
+  /*src: url('../public/fonts/ChicagoFLF.ttf');*/
+  src: url('../public/fonts/TRClapton.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,6 +32,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+h1 {
+  font-size: 9rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 @layer utilities {
