@@ -1,20 +1,24 @@
+'use client';
+
 import styles from "@/app/Home.module.css";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+
   return (
     <main className={styles.container}>
       <div id="title-container" className={styles.homeTitleContainer}>
-        <h1 className={styles.homeTitle}>Marty McFly</h1>
+        <h1 className={styles.homeTitle}>Matthew Serwer</h1>
       </div>
       <div className={styles.iconsGradientOne}>
-        <div id="languages" className={styles.iconRow}>
+        <div id="languages" className={styles.iconRowLarge}>
           <i className="devicon-java-plain" />
           <i className="devicon-javascript-plain" />
           <i className="devicon-typescript-plain" />
           <i className="devicon-python-plain" />
           <i className="devicon-html5-plain" />
           <i className="devicon-css3-plain" />
-          <i className="devicon-bash-plain" />
+          {/*<i className="devicon-bash-plain" />*/}
         </div>
         <div id="frameworks" className={styles.iconRow}>
           <i className="devicon-react-original" />
@@ -33,17 +37,13 @@ export default function Home() {
           <i className="devicon-mongodb-plain" />
           <i className="devicon-postgresql-plain" />
           <i className="devicon-docker-plain" />
-          <i className="devicon-sass-plain"/>
+          <i className="devicon-sass-plain" />
           <i className="devicon-less-plain-wordmark" />
-          <i className="devicon-bootstrap-plain"/>
-          <i className="devicon-materialui-plain"/>
-          <i className="devicon-angularmaterial-plain"/>
-          <i className="devicon-tailwindcss-plain"/>
-          {/*<i className="devicon-jest-plain"/>*/}
-          {/*<i className="devicon-jasmine-plain"/>*/}
+          <i className="devicon-bootstrap-plain" />
+          <i className="devicon-materialui-plain" />
+          <i className="devicon-angularmaterial-plain" />
+          <i className="devicon-tailwindcss-plain" />
         </div>
-
-
       </div>
     </main>
   );

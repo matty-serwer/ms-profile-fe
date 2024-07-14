@@ -5,26 +5,54 @@
     height: 100vh;
 }
 
+.homeTitleContainer {
+    position: relative;
+    text-align: center;
+    animation: fade-down 0.5s;
+}
+
 .homeTitle {
-    font-family: 'Chicago', sans-serif;
+    /*font-family: 'Chicago', sans-serif;*/
 }
 
 .iconsGradientOne {
-    font-size: 10rem;
+    font-size: 9rem;
     background: linear-gradient(130deg, #30CFD0 0%, #330867 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-/*    set a gap of 5 px between each element */
 }
 
-.iconRow {
+.iconRow, .iconRowLarge, .iconRowSmall {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+}
+
+.iconRowLarge {
+    font-size: 12rem;
 }
 
 .iconRowSmall {
-    display: flex;
-    justify-content: space-between;
-    font-size: 5rem;
+    font-size: 4rem;
 }
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/*@keyframes fade-down {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*        transform: translateY(-30px) scale(0.9);*/
+/*    }*/
+
+/*    100% {*/
+/*        opacity: 1;*/
+/*        transform: translateY(0px) scale(1);*/
+/*    }*/
+/*}*/
