@@ -4,8 +4,6 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +11,9 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --text-color: #414141;
+    --text-hover-color: #999999;
+    --highlight-color: #45C2BC;
   }
 }
 
@@ -25,7 +26,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--text-color);
   background: linear-gradient(
       to bottom,
       transparent,
