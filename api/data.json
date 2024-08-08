@@ -1,0 +1,63 @@
+{
+  "tools": [
+    {
+      "name": "CodeWhisperer",
+      "features": [
+        "Automatic code generation",
+        "AI-powered suggestions",
+        "Error detection and correction"
+      ],
+      "supported_languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "C++"
+      ],
+      "pricing": [
+        {
+          "tier": "Free tier with limited usage",
+          "price": "Free"
+        },
+        {
+          "tier": "Paid tiers with increased usage and features",
+          "price": "Paid"
+        }
+      ],
+      "user_feedback": [
+        "I used CodeWhisperer to generate the code for a complex algorithm, and it saved me a lot of time. The AI was very accurate and helped me avoid errors.",
+        "The AI suggestions in CodeWhisperer were sometimes too general and didn't fit my specific use case."
+      ]
+    },
+    {
+      "name": "GitHub Copilot",
+      "features": [
+        "Automatic code completion",
+        "AI-powered suggestions",
+        "Refactoring assistance"
+      ],
+      "supported_languages": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "C++",
+        "Ruby",
+        "Go",
+        "PHP"
+      ],
+      "pricing": [
+        {
+          "tier": "Free for GitHub users",
+          "price": "Free"
+        },
+        {
+          "tier": "Paid plans with additional features and priority support",
+          "price": "Paid"
+        }
+      ],
+      "user_feedback": [
+        "GitHub Copilot has saved me a lot of time by suggesting code snippets and completing my code automatically. It's definitely worth using.",
+        "The AI-powered suggestions in GitHub Copilot can sometimes be inaccurate or irrelevant, which can be frustrating."
+      ]
+    }
+  ]
+}
