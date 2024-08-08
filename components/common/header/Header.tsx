@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`${styles.header} ${inter.className}`}>
+    <header className={`${styles.header} `}>
       <nav className={styles.nav}>
         <Link href="/" className={styles.logo}>
           <h3>LTDe</h3>
