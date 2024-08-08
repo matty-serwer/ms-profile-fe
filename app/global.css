@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --text-color: #504141;
+    --text-hover-color: #999999;
+    --highlight-color: #45C2BC;
+    --font-inter: var(--font-inter);
+    --font-raleway: var(--font-raleway);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: #fff;
+    --background-end-rgb: #fff;
+    --text-color: #504141;
+    --text-hover-color: #999999;
+    --highlight-color: #45C2BC;
+    --font-inter: var(--font-inter);
+    --font-raleway: var(--font-raleway);
+  }
+}
+
+@font-face {
+  font-family: 'Chicago';
+  /*src: url('../public/fonts/ChicagoFLF.ttf');*/
+  src: url('../public/fonts/TRClapton.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  color: var(--text-color);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+h1 {
+  font-size: 9rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}

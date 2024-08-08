@@ -1,0 +1,5 @@
+.heroHeader {
+    font-family: var(--font-raleway), serif;
+    /*font-family: "Times New Roman", Times, serif;*/
+    font-weight: 100;
+}

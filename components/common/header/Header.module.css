@@ -1,0 +1,150 @@
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    border-bottom: 2px solid var(--text-color);
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-family: var(--font-inter), sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navList {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navList li {
+    margin-left: 1.5rem;
+}
+
+.navList a {
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navList a:hover {
+    color: var(--text-hover-color);
+    text-decoration: underline;
+}
+
+.navList a:active {
+    color: var(--highlight-color);
+}
+
+.burgerMenu {
+    display: none;
+}
+
+.menuVisible {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .burgerMenu {
+        height: 30px;
+        width: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .burgerBar {
+        width: 3em;
+        height: .18em;
+        background-color: rgb(65, 65, 65);
+    }
+
+    .menuVisible {
+        display: flex;
+        background-color: #fff;
+        z-index: 1000;
+        position: absolute;
+        right: 4px; /* Position the menu on the right side */
+        top: 74px; /* Align the menu to the top */
+        border: 2px solid var(--text-color);
+        font-size: 1.5rem;
+        width: 50%; /* Adjust width as needed */
+        animation: slideInFromTop 0.5s ease-out;
+        padding: 10px 0 10px 20px;
+    }
+
+    /*.menuItem {*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    .menuLink {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkbox {
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 2px solid var(--text-color);
+        margin-right: 6px;
+    }
+
+    .menuItem:hover .checkbox {
+        background-color: var(--highlight-color);
+    }
+
+    .burgerBarClicked:nth-child(1) {
+        transform: rotate(60deg) translate(0.75em, 0.70em);
+        transition: ease-out 0.5s;
+    }
+
+    .burgerBarClicked:nth-child(2) {
+        transform: scale(0.01);
+        transition: ease-out 0.5s;
+    }
+
+    .burgerBarClicked:nth-child(3) {
+        transform: rotate(120deg) translate(-0.5em, 0.5em);
+        transition: ease-out 0.5s;
+    }
+
+    .burgerBarUnclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    }
+
+    .navList {
+        display: none;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
