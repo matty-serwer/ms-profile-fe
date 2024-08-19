@@ -1,4 +1,28 @@
+.homeHero {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .heroHeader {
     font-family: var(--font-raleway), serif;
     font-weight: 100;
+}
+
+@media (max-width: 1200px) {
+    .heroHeader {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroHeader {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .heroHeader {
+        font-size: 3rem;
+    }
 }

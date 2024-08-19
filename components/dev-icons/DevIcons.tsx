@@ -7,8 +7,8 @@ const DevIcons = () => {
         <div id="languages" className={styles.iconRowLarge}>
           <i className="devicon-java-plain"/>
           <i className="devicon-javascript-plain"/>
-          <i className="devicon-typescript-plain"/>
           <i className="devicon-python-plain"/>
+          <i className="devicon-typescript-plain"/>
           <i className="devicon-html5-plain"/>
           <i className="devicon-css3-plain"/>
           {/*<i className="devicon-bash-plain" />*/}

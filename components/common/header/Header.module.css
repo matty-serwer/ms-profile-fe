@@ -10,8 +10,6 @@
 .logo {
     font-size: 1.5rem;
     margin-left: 1rem;
-
-    /*font-family: var(--font-inter), sans-serif;*/
     font-family: var(--font-raleway), sans-serif;
     font-weight: 500;
 }
@@ -21,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     padding: .5rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 

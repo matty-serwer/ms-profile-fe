@@ -1,7 +1,9 @@
+import DevIcons from "@/components/dev-icons/DevIcons";
+
 const Skills = () => {
   return (
     <div>
-      <h3>Skills</h3>
+      <DevIcons />
     </div>
   );
 };

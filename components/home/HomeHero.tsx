@@ -4,7 +4,7 @@ import { raleway } from '@/app/ui/fonts'
 
 const HomeHero = () => {
   return (
-    <div>
+    <div className={styles.homeHero}>
       <h1 className={`${styles.heroHeader} `}>
         Matthew Serwer
       </h1>
